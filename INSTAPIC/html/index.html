@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: sans-serif;
+            color:black;
+            background-color:antiquewhite ;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header{
+
+            background-color: rgb(26, 142, 219);
+            padding: 20px;
+            text-align: center;
+            
+        }
+        main{
+
+            background-color: antiquewhite;
+            padding: 20px;
+            max-width: 400px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+           
+        }
+        .login-box{
+            
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 10px 10px 25px rgba(19, 19, 19, 0.8);
+            text-align: center;
+        }
+
+        .login-box h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+
+        .login-box input{
+            background-color: #fff;
+            border:2px solid #219ebc;
+            color:blue;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        
+        }
+
+
+
+        .login-box input:focus{
+
+            border-color: rgb(243, 142, 11);
+            outline: none;
+
+        }
+
+
+        .login-box a{
+
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Dentro del body va lo que es visible al usuario -->
+    <header>
+        <!-- Título, menú de navegación, etc -->
+         <h1>InstaPIC</h1>
+    </header>
+    <main>
+        
+        <div class="login-box">
+        <!-- Contenido principal -->
+            <h2>iniciar sesion</h2>
+            <input type="text" placeholder="Nombre de usuario:" />
+            <input type="password"  placeholder="Contraseña:"/>
+            <a href="home.html">Ingresar</a>
+            <a href="sign-up.html">Registrarse</a>
+
+        </div>
+        </main>
+    <aside>
+        <!-- Barra lateral -->
+    </aside>
+    <footer>
+        <!-- Pie de página -->
+        &copy; Derechos reservados
+    </footer>
+</body>
+</html>
