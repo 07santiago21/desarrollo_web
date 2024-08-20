@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>InstaPIC</title>
 </head>
 <body>
     <header>
-        <h1>InstaPIC</h1>
-        <ul>
-            <li>Inicio</li>
-            <li>Mi perfil</li>
-            <li>Buscar</li>
-            <li>Nueva publicación</li>
-            <li>Cerrar sesión</li>
-        </ul>
+        <nav>
+            <ul>
+                <li>InstaPIC</li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Mi perfil</a></li>
+                <li><a href="">Buscar</a></li>
+                <li><a href="">Nueva publicación</a></li>
+                <li><a href="index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            Juan Pérez
+        <section id="profile">
+            <div>
+                <img src="../images/profile.png" />
+                <span>santiago</span>
+            </div>
+            <div>
+                <span>2</span>
+                <span>Publicaciones</span>
+            </div>
+            <div>
+                <span>3</span>
+                <span>Seguidores</span>
+            </div>
+            <div>
+                <span>13</span>
+                <span>Solicitudes</span>
+            </div>
         </section>
-        <section>
-            10 publicaciones
-            5 seguidores
-        </section>
-        <section>
-            <ul>
-                <li><img src="../images/gallery0.jpg" width="300px"/></li>
-                <li><img src="../images/gallery1.jpg" width="300px"/></li>
-                <li><img src="../images/gallery2.webp" width="300px"/></li>
-                <li><img src="../images/gallery3.jpeg" width="300px"/></li>
-                <li><img src="../images/gallery4.jpg" width="300px"/></li>
-                <li><img src="../images/gallery5.jpg" width="300px"/></li>
-                <li><img src="../images/gallery6.jpg" width="300px"/></li>
-                <li><img src="../images/gallery7.jpg" width="300px"/></li>
-                <li><img src="../images/gallery8.webp" width="300px"/></li>
-                <li><img src="../images/gallery9.avif" width="300px"/></li>
-            </ul>
+        <section id="gallery">
+                <img src="../images/gallery0.jpg"/>
+                <img src="../images/gallery1.jpg" />
+                <img src="../images/gallery2.jpg" />
+                <img src="../images/gallery4.avif" />
         </section>
     </main>
     <footer>
-        &copy; Derechos reservados
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <p>&copy; 2024 InstaPIC Company</p>
     </footer>
 </body>
 </html>
