@@ -1,28 +1,25 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
-
 body{
-    font-family: Arial;
-    background: #f2f2f2;
+    background: #000500;
 }
 
-.parent-box{
-    background: #2e294a;
-    width: 700px;
-    overflow: hidden;
+.gallery{
+    width: 100%;
 }
 
-.box{
-    width:200px;
-    color:#fff;
-    font-size: 38px;
-    height:200px;
-    background: #0e6ba8;
+.gallery img{
+    vertical-align: top;
+    width: 300px;
     margin: 20px;
+    padding: 5px;
+    opacity: 0.5;
+    border: 1px solid #484848;
 }
 
-.one{ float: right; }
-
-.two{ float: left; }
+.gallery img:hover{
+    border: 1px solid #fff;
+    opacity: 1;
+}
