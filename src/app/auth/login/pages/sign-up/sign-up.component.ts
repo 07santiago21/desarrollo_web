@@ -13,9 +13,8 @@ export class SignUpComponent {
 
   signUpForm = this.fb.group({
     email: [''],
-    userName:['', [Validators.required, Validators.minLength(8), Validators.maxLength(12)]],
-    password:['', [Validators.required, Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$')]],
-    rePassword: ['']
+    userName:[''],
+    password:['']
   });
 
   constructor(private fb: FormBuilder, private router: Router) {
@@ -23,25 +22,23 @@ export class SignUpComponent {
   }
 
   onResgister() {
-    if (!this.signUpForm.valid) {
-      alert('Diligencie todos los campos');
-      return;
-    }
+    
     let userName = this.signUpForm.value.userName || '';
     let password = this.signUpForm.value.password || '';
-    let rePassword = this.signUpForm.value.rePassword || '';
-    if (rePassword !== password) {
-      alert('Las constraseñas no coinciden');
-      return;
-    }
+
+    if (userName !== '' && password !== ''){
 
     if (localStorage.getItem(userName.toLowerCase().trim())) {
-      alert('Usuario ya existe');
+      alert('ya existe el usuario');
       return;
     }
 
     localStorage.setItem(userName.toLowerCase().trim(), password);
     this.router.navigateByUrl('/home');
+  }
+  else{
+    alert('ingrese todos los datos ');
+  }
   }
 
 }
