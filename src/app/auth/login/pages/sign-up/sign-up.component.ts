@@ -25,13 +25,6 @@ export class SignUpComponent {
   }
 
   onResgister() {
-    if (!this.signUpForm.valid) {
-      Swal.fire({
-        text:'Debe diligenciar todos los campos',
-        icon:'error'
-      })
-      return;
-    }
     let userName = this.signUpForm.value.userName || '';
     let email = this.signUpForm.value.email || '';
     let password = this.signUpForm.value.password || '';

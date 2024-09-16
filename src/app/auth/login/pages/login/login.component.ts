@@ -26,15 +26,7 @@ export class LoginComponent {
 
   onLogin(){
 
-    console.log(this.loginForm);
-    if (!this.loginForm.valid) {
-      Swal.fire({
-        title:'Ingreso',
-        text:'Debe diligenciar todos los campos',
-        icon:'error'
-      });
-      return;
-    }
+    
     let userName = this.loginForm.value.userName||'';
     let password = this.loginForm.value.password||'';
     let response = this.userService.login(userName, password);
